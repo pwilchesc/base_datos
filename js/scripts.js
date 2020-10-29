@@ -1,0 +1,35 @@
+let usuarios = "";
+
+for (let i = 0; i < 15; i++) {
+  const nombre = faker.name.firstName();
+  const apellido = faker.name.lastName();
+  const ciudad = faker.address.city();
+  const carrera = faker.name.jobTitle();
+  const direccion = faker.address.streetAddress();
+  const celular = faker.phone.phoneNumber();
+  const correo = faker.internet.email();
+  const salario = faker.finance.amount();
+  const edad = Math.round(Math.random() * 80);
+
+  usuarios += `{name:"${nombre}",apellido:"${nombre}",ciudad:"${ciudad}",carrera:"${carrera}",direccion:"${direccion}",celular:"${celular}",correo:"${correo}",salario:${salario},edad:${edad}},`;
+}
+console.log(usuarios);
+
+/*
+{name:"Liam",apellido:"Liam",ciudad:"Vitobury",carrera:"Customer Optimization Technician",direccion:"88457 Ladarius Islands",celular:"(556) 980-3353",correo:"Arnulfo.Smitham19@hotmail.com",salario:490.4,edad:77},{name:"Mabelle",apellido:"Mabelle",ciudad:"New Dave",carrera:"Lead Operations Liaison",direccion:"5177 Harris Park",celular:"1-318-858-5903 x663",correo:"Anna81@yahoo.com",salario:638.38,edad:20},{name:"Millie",apellido:"Millie",ciudad:"Reynoldsport",carrera:"Corporate Configuration Administrator",direccion:"9588 Marks Spring",celular:"(975) 270-6264",correo:"Porter.Stanton@hotmail.com",salario:768,edad:5},{name:"Arlene",apellido:"Arlene",ciudad:"Port Roy",carrera:"Regional Group Assistant",direccion:"5887 Dudley Flat",celular:"(490) 463-0935 x5595",correo:"Kurt.Zemlak44@hotmail.com",salario:773.03,edad:55},{name:"Annie",apellido:"Annie",ciudad:"Deangelomouth",carrera:"Chief Response Officer",direccion:"0177 Bruen Hill",celular:"647-747-6878",correo:"Connie.Schmitt@gmail.com",salario:857.21,edad:49},{name:"Linda",apellido:"Linda",ciudad:"Lake Watsontown",carrera:"Customer Quality Manager",direccion:"1763 Spencer Mission",celular:"528.923.2450",correo:"Nina.Wiza@yahoo.com",salario:106.78,edad:43},{name:"Cielo",apellido:"Cielo",ciudad:"Gerlachfurt",carrera:"International Data Developer",direccion:"115 Citlalli Drives",celular:"378-736-7163 x038",correo:"Geraldine.Wolf@yahoo.com",salario:381.06,edad:74},{name:"Kirsten",apellido:"Kirsten",ciudad:"West Solonburgh",carrera:"Legacy Creative Liaison",direccion:"82086 Brown Land",celular:"378.505.0503",correo:"Elias_Legros@gmail.com",salario:797.66,edad:15},{name:"Janie",apellido:"Janie",ciudad:"Monaborough",carrera:"Dynamic Operations Liaison",direccion:"2794 Goldner Locks",celular:"736-925-2719",correo:"Cecile78@hotmail.com",salario:442.83,edad:56},{name:"Rae",apellido:"Rae",ciudad:"Kurtberg",carrera:"Internal Optimization Developer",direccion:"4129 Gibson Curve",celular:"1-431-709-7927",correo:"Raphaelle16@yahoo.com",salario:131.99,edad:67},{name:"Stuart",apellido:"Stuart",ciudad:"East Hilbert",carrera:"Human Usability Representative",direccion:"013 Mohr Walks",celular:"492.916.5195",correo:"Tabitha48@yahoo.com",salario:513.84,edad:33},{name:"Quincy",apellido:"Quincy",ciudad:"Wilkinsonberg",carrera:"Regional Division Liaison",direccion:"02953 Vandervort Roads",celular:"1-748-374-5706 x430",correo:"Eveline98@gmail.com",salario:758.33,edad:56},{name:"Lorena",apellido:"Lorena",ciudad:"South Moseshaven",carrera:"Direct Division Director",direccion:"773 Heathcote Rest",celular:"806.900.2548",correo:"Lonny.Miller@gmail.com",salario:130.9,edad:35},{name:"Jo",apellido:"Jo",ciudad:"Jaskolskimouth",carrera:"Forward Response Officer",direccion:"0554 Jayson Drive",celular:"1-730-231-5425 x1699",correo:"Demarco.Baumbach65@gmail.com",salario:816.47,edad:17},{name:"Doyle",apellido:"Doyle",ciudad:"West Darrick",carrera:"Direct Metrics Analyst",direccion:"296 Beatty Burg",celular:"1-323-415-4630 x50275",correo:"Grace_Schuppe@hotmail.com",salario:414.89,edad:10}
+*/
+
+/*
+Segundo punto 
+> use ejemplo
+> db.informacion.insertMany([{name:"Liam",apellido:"Liam",ciudad:"Vitobury",carrera:"Customer Optimization Technician",direccion:"88457 Ladarius Islands",celular:"(556) 980-3353",correo:"Arnulfo.Smitham19@hotmail.com",salario:490.4,edad:77},{name:"Mabelle",apellido:"Mabelle",ciudad:"New Dave",carrera:"Lead Operations Liaison",direccion:"5177 Harris Park",celular:"1-318-858-5903 x663",correo:"Anna81@yahoo.com",salario:638.38,edad:20},{name:"Millie",apellido:"Millie",ciudad:"Reynoldsport",carrera:"Corporate Configuration Administrator",direccion:"9588 Marks Spring",celular:"(975) 270-6264",correo:"Porter.Stanton@hotmail.com",salario:768,edad:5},{name:"Arlene",apellido:"Arlene",ciudad:"Port Roy",carrera:"Regional Group Assistant",direccion:"5887 Dudley Flat",celular:"(490) 463-0935 x5595",correo:"Kurt.Zemlak44@hotmail.com",salario:773.03,edad:55},{name:"Annie",apellido:"Annie",ciudad:"Deangelomouth",carrera:"Chief Response Officer",direccion:"0177 Bruen Hill",celular:"647-747-6878",correo:"Connie.Schmitt@gmail.com",salario:857.21,edad:49},{name:"Linda",apellido:"Linda",ciudad:"Lake Watsontown",carrera:"Customer Quality Manager",direccion:"1763 Spencer Mission",celular:"528.923.2450",correo:"Nina.Wiza@yahoo.com",salario:106.78,edad:43},{name:"Cielo",apellido:"Cielo",ciudad:"Gerlachfurt",carrera:"International Data Developer",direccion:"115 Citlalli Drives",celular:"378-736-7163 x038",correo:"Geraldine.Wolf@yahoo.com",salario:381.06,edad:74},{name:"Kirsten",apellido:"Kirsten",ciudad:"West Solonburgh",carrera:"Legacy Creative Liaison",direccion:"82086 Brown Land",celular:"378.505.0503",correo:"Elias_Legros@gmail.com",salario:797.66,edad:15},{name:"Janie",apellido:"Janie",ciudad:"Monaborough",carrera:"Dynamic Operations Liaison",direccion:"2794 Goldner Locks",celular:"736-925-2719",correo:"Cecile78@hotmail.com",salario:442.83,edad:56},{name:"Rae",apellido:"Rae",ciudad:"Kurtberg",carrera:"Internal Optimization Developer",direccion:"4129 Gibson Curve",celular:"1-431-709-7927",correo:"Raphaelle16@yahoo.com",salario:131.99,edad:67},{name:"Stuart",apellido:"Stuart",ciudad:"East Hilbert",carrera:"Human Usability Representative",direccion:"013 Mohr Walks",celular:"492.916.5195",correo:"Tabitha48@yahoo.com",salario:513.84,edad:33},{name:"Quincy",apellido:"Quincy",ciudad:"Wilkinsonberg",carrera:"Regional Division Liaison",direccion:"02953 Vandervort Roads",celular:"1-748-374-5706 x430",correo:"Eveline98@gmail.com",salario:758.33,edad:56},{name:"Lorena",apellido:"Lorena",ciudad:"South Moseshaven",carrera:"Direct Division Director",direccion:"773 Heathcote Rest",celular:"806.900.2548",correo:"Lonny.Miller@gmail.com",salario:130.9,edad:35},{name:"Jo",apellido:"Jo",ciudad:"Jaskolskimouth",carrera:"Forward Response Officer",direccion:"0554 Jayson Drive",celular:"1-730-231-5425 x1699",correo:"Demarco.Baumbach65@gmail.com",salario:816.47,edad:17},{name:"Doyle",apellido:"Doyle",ciudad:"West Darrick",carrera:"Direct Metrics Analyst",direccion:"296 Beatty Burg",celular:"1-323-415-4630 x50275",correo:"Grace_Schuppe@hotmail.com",salario:414.89,edad:10}])
+*/
+
+/*
+Aumentar salario: ciudad:"East Hilbert"
+db.informacion.update({ciudad:"East Hilbert"},{$inc:{"salario":300}})
+*/
+
+/*
+db.informacion.deleteMany({edad:{$lt:18}})
+*/
